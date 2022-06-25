@@ -1,0 +1,126 @@
+/*============GERAL===============*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: hsl(0, 13%, 5%);
+  --button: #000000;
+  --button-hover: hsl(270, 100%, 50%);
+  font-size: 62.5%; /* 1 rem = 10px*/
+}
+
+body {
+  background-color: var(--background);
+}
+#container {
+  background-color: transparent;
+
+  display: grid;
+  grid-template-areas:
+    'A A'
+    'D C'
+    'D C';
+}
+
+/*============HEAD===============*/
+#container .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  grid-area: A;
+
+  padding: 5rem;
+}
+
+#container .head h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 7rem;
+}
+
+#container .head p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 3.5rem;
+
+  margin-top: 1.1rem;
+}
+
+#container .head .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 313.33px;
+  height: 58px;
+
+  background-color: var(--button);
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: white;
+  text-decoration: none;
+
+  margin-top: 1.3rem;
+  transition: background 1300ms;
+}
+
+#container .head .button:hover {
+  background-color: var(--button-hover);
+}
+
+/*============SNEAKERS==============*/
+
+#container .sneaker1 img {
+  max-width: 44.7rem;
+  max-height: 55.8rem;
+
+  grid-area: B;
+
+  position: absolute;
+
+  left: 36.1rem;
+  top: 17.4rem;
+
+  z-index: -1;
+}
+
+#container .sneaker2 img {
+  max-width: 44.7rem;
+  max-height: 49.8rem;
+
+  grid-area: C;
+  position: absolute;
+
+  z-index: -1;
+  left: 75.6rem;
+  top: 23.3rem;
+}
+
+/*============DEGRADE==============*/
+
+.degrade img {
+  width: 91.5rem;
+  height: 72.3rem;
+
+  position: absolute;
+  left: 32.1rem;
+  top: 2rem;
+
+  z-index: -2;
+}
