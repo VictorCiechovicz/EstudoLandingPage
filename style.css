@@ -112,6 +112,24 @@ body {
   top: 23.3rem;
 }
 
+#container .sneaker1 img {
+  transform: perspective(1500px) rotateY(15deg);
+  transition: transform 1s ease 0s;
+}
+
+#container .sneaker1 img:hover {
+  transform: perspective(3000px) rotateY(5deg);
+}
+
+#container .sneaker2 img {
+  transform: perspective(1500px) rotateY(-15deg);
+  transition: transform 1s ease 0s;
+}
+
+#container .sneaker2 img:hover {
+  transform: perspective(3000px) rotateY(-5deg);
+}
+
 /*============DEGRADE==============*/
 
 .degrade img {
